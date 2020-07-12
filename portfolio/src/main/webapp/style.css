@@ -3,7 +3,25 @@
   margin-right: auto;
   width: 650px;
 }
+.image-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-#greeting-container {
+.image-thumbnails img {
+  margin: 10px;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.image-thumbnails img:hover {
+  border: thick solid black;
+}
+
+body {
+  background-color: lightblue;
+}
+#random-image-container img {
   margin-top: 20px;
 }
