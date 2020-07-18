@@ -12,8 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// function getTextUsingArrowFunctions() {
+//   fetch('/data').then(response => response.text()).then((quote) => {
+//     document.getElementById('quote-container').innerText = quote;
+//   });
+// }
+
 function getTextUsingArrowFunctions() {
-  fetch('/data').then(response => response.text()).then((quote) => {
+  fetch('/data').then(response => response.json()).then((quote) => {
     document.getElementById('quote-container').innerText = quote;
   });
 }
